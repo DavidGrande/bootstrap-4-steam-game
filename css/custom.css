@@ -1,0 +1,197 @@
+/*BACKGROUND COLORS*/
+.bg-black-custom{
+    background: #000;
+}
+.bg-grey-custom{
+    background-color: #22282d;
+}
+.bg-blue-custom{
+    background-color: #264157;
+}
+.bg-lightblue-custom{
+    background-color: #407999;
+}
+.bg-black-trans-custom{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.bg-white-trans-custom{
+    background-color: rgba(255,255,255, 0.3);
+}
+/*INDEX*/
+#sidebar{
+    z-index: 1600 !important;
+}
+#carouselIndicators{
+    z-index: 1;
+}
+body{
+    overflow-x: hidden;
+}
+#modalLogin .close{
+    color: white;
+}
+nav {
+    height: 70px;
+}
+nav img{
+    height: 44px;
+    cursor: pointer;
+}
+.wrapper{
+    display: flex;
+}
+#sidebar{
+    top: 70px;
+    bottom: 0;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1;
+}
+main{
+    padding: 0 !important;
+}
+.header-principal{
+    font-family: 'Comfortaa';
+    color: #3d5bdd;
+}
+.header-secundario{
+    font-family: 'PT Sans';
+    color: #cbcbcb;
+}
+.cabecera-index{
+    background: url(../images/background.jpg) no-repeat top center #000;
+}
+.cabecera-index img{
+    width: 320px;
+}
+.ico_bundle{
+    background-position: -48px 0px;
+}
+.ico_steamworks{
+    background-position: 0px 0px;
+}
+.ico_actualizados{
+    background-position: -96px 0px;
+}
+.ico_novedades{
+    background-position: -112px 0px;
+}
+.ico_proximamente{
+    background-position: -128px 0px;
+}
+.ico_especiales{
+    background-position: -144px 0px;
+}
+.icon {
+    background-image: url( '../images/store_menu_icons.png' );
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+#myTab{
+    background: #000;
+}
+#myTab .nav-item .active{
+    color: white;
+}
+#myTab .nav-item .active{
+    background-color: #264157;
+    border-color: #264157;
+}
+#myTabContent .table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: rgba(0,0,0,0.2) !important;
+}
+#myTabContent td{
+    border:none;
+}
+#listaJuegos .nav-tabs{
+    border-bottom: none;
+}
+.font-size-08{
+    font-size: 0.8em;
+}
+.font-size-09{
+    font-size: 0.9em;
+}
+.dropdown-custom{
+    top: 48px;
+    left: -78px;
+    min-width: 250px;
+    padding: 1em;
+    border-radius: 0 0 10px 10px;
+}
+/*Paginas footer*/
+.fondo-steam{
+    background: url(../images/colored_body_top2.png) center top no-repeat #1b2838;
+}
+/*STEAMWORKS*/
+#steamworks{
+    background: url(../images/home_bg_squares.png) 121px center no-repeat #1a1a1a;
+}
+.margin-top-70{
+    margin-top:70px;
+}
+#steamworks h1{
+    font-family: "Motiva Sans", Sans-serif;
+    font-weight: 200;
+    font-size: 29px;
+}
+.border-dark-custom{
+    border-color: black !important;
+}
+#steamworks p,
+#steamworks li,
+#juego p,
+#juego table,
+.azulito{
+    color: #92a6bd;
+}
+#dest-works{
+    box-shadow: 0 0 50px rgba(103,193,245,0.3);
+}
+#dest-works p{
+    color: #a4daf9;
+}
+#dest-works h3{
+    color: #bfe8ff;
+}
+#dest-works h2{
+    color: #67c1f5;
+}
+#steamworks article p,
+#steamworks article li{
+    line-height: 1.2em;
+    font-size: 0.9em;
+}
+#steamworks article h3 {
+    color: #67C1F5;
+    font-size: 1.3em;
+}
+/*Sidebar*/
+.links-custom{
+    font-size: 1.2em;
+}
+.links-custom:hover{
+    color:white;
+    text-decoration: none;
+}
+/*Bundle*/
+.bundle-mas{
+    font-size: 4em;
+}
+.border-naranja{
+   border-color: #FF8F00 !important;
+}
+/*Juego*/
+#juego{
+    background: url(../images/warframe-fondo.jpg) no-repeat top center #1b2838;
+}
+.icon_report{
+    background: url(../images/icons_16.png) center no-repeat #007bff !important;
+}
+.icon_report:hover{
+    background: url(../images/icons_16.png) center no-repeat #0069D9 !important;
+}

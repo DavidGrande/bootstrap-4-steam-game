@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Steam</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <link href="css/custom.css" rel="stylesheet" type="text/css"/>
+        <!--Fuentes Google-->
+        <link href="https://fonts.googleapis.com/css?family=Comfortaa|PT+Sans" rel="stylesheet"> 
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-dark bg-grey-custom">
+            <button class="navbar-toggler" href="#sidebar" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="" href="">
+                <img class="d-none d-lg-block d-xl-block" src="images/logo.png"/>
+                <img class="d-block d-lg-none" src="images/logo-sm.png"/>
+            </a>
+            <input type="text" class="col-md-5 d-none d-lg-block d-xl-block nav-item" placeholder="Buscar..." name="buscar"/>
+            <div class="dropdown d-block d-lg-none">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buscar</button>
+                <div class="bg-grey-custom dropdown-menu dropdown-custom" aria-labelledby="dropdownMenuButton">
+                    <input type="text" placeholder="Buscar..." name="buscar"/>
+                </div>
+            </div>
+            <a class="d-none d-lg-block d-xl-block font-weight-bold links-custom" href="">Bundle</a>
+            <a class="d-none d-lg-block d-xl-block font-weight-bold links-custom" href="">Steamworks</a>
+            <a class="" data-target="#modalLogin" data-toggle="modal"><img src="images/avatar.png"/></a>
+        </nav>
+        <!-- /Navbar -->
+        <!-- Modal -->
+        <div class="modal fade" id="modalLogin">
+            <div class="modal-dialog">
+                <div class="modal-content  bg-grey-custom">
+                    <div class="modal-header border-primary">
+                        <h5 class="modal-title text-white">Iniciar sesión</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <input type="text" class="form-control" placeholder="Usuario" name="user" />
+                            </div>
+                            <div class="col">
+                                <input type="password" class="form-control" placeholder="Contraseña" name="pass"> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-primary">
+                        <button type="button" class="btn btn-secundary" data-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Conectarse</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal -->
+        <div class="wrapper row mx-0" id="main">
+            <!-- Sidebar -->
+            <div class="sidebar position-fixed collapse col-10 col-sm-10 col-md-4 col-lg-4 col-xl-3 bg-dark" id="sidebar">
+                <div class="list-group">
+                    <a class="d-block d-lg-none p-2 font-weight-bold links-custom" href=""><span class="icon ico_bundle"></span>Bundle</a>
+                    <a class="d-block d-lg-none p-2 font-weight-bold links-custom" href=""><span class="icon ico_steamworks"></span>Steamworks</a>
+                </div>
+                <h4 class="p-2 header-secundario">CATEGORÍAS</h4>
+                <div class="list-group">
+                    <a class="p-2 font-weight-bold links-custom" href="#"><span class="icon ico_novedades"></span>Novedades</a>
+                    <a class="p-2 font-weight-bold links-custom" href="#"><span class="icon ico_vendido"></span>Lo más vendido</a>
+                    <a class="p-2 font-weight-bold links-custom" href="#"><span class="icon ico_proximamente"></span>Próximamente</a>
+                    <a class="p-2 font-weight-bold links-custom" href="#"><span class="icon ico_especiales"></span>Especiales</a>
+                </div>
+            </div>
+            <!-- /Sidebar -->
+            <main class="bg-black-custom col-12">
+                <div id="juego" class="margin-top-70">
+                    <div class="row bg-black-trans-custom mx-0">
+                        <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2 px-0">
+                            <h1 class="header-secundario pl-2">WARFRAME</h1>
+                            <h5 class="header-secundario align-bottom pl-2">Ninjas play free</h5>
+                            <div class="pt-3 row bg-black-trans-custom mx-0">
+                                <div class="col-12 col-lg-8">
+                                    <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="5"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="6"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="7"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="8"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="9"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="10"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="11"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="12"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="13"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="14"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="15"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="16"></li>
+                                            <li data-target="#carouselIndicators" data-slide-to="17"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="d-block w-100" src="images/warframe/Screenshot_1.jpg" alt="warframe-1"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100"  src="images/warframe/Screenshot_2.jpg" alt="warframe-2"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/Screenshot_7.jpg" alt="warframe-3"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/Screenshot_8.jpg" alt="warframe-4"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_1a353df5ca981d9aea85571fc2e2e2e1193b78f6.jpg" alt="warframe-5"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_2d79448091149a8cc790b62e7422615a011d015a.jpg" alt="warframe-6"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_4dff21f198e04499b54cc1a22063e4ca2c9f8dc9.jpg" alt="warframe-7"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_7e5cfbb9b7c9ea7a34fab906d1e507de0a8fd75b.jpg" alt="warframe-8"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_30bb11e8b435a0a966bcbce1707ea55e4cbb19a2.jpg" alt="warframe-9"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_53a73e9b1829372455819287fe7694bf22df02e4.jpg" alt="warframe-10"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_84a365a8144b53cc0d6f1582edfead7e50c2ee9d.jpg" alt="warframe-11"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_86cc27d912afc0a2cd9a1f1d8f564a0f91fde6a6.jpg" alt="warframe-12"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_797d87520a8211d2a27eace5f60eb42cd3ac6d77_002.jpg" alt="warframe-13"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_3708c72116bdf5e9e306c1a9857c3f257b1011f5_002.jpg" alt="warframe-14"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_4209a9b052ef07e0813ea5285524b300bf8e50d8.jpg" alt="warframe-15"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_a0bbf96bf2f5498f5625bdf67a28493365cf6d72.jpg" alt="warframe-16"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_a3bddbc994e6b3ca465ffb0e8c38bdb0525ca7d2.jpg" alt="warframe-17"/>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="d-block w-100" src="images/warframe/ss_bdfbc36be7556f8a21773170b1663b31c53a46e4.jpg" alt="warframe-18"/>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-lg-4">
+                                    <div class="d-none d-lg-block">
+                                        <img class="img-fluid" src="images/warframe/header.jpg" alt="header"/>
+                                    </div>
+                                    <p class="text-white text-justify">
+                                        Warframe es un juego de acción en línea cooperativo gratuito ambientado en un mundo de ciencia ficción en evolución. Uníos a vuestros amigos en cruzadas "jugador contra enemigo" a través del Sistema Solar y dominad el poder de los warframes. Jugad en solitario o luchad juntos contra los enemigos que 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0">
+                        <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2 bg-black-trans-custom">
+                            <p class="text-white m-1">Inicia sesión para añadir este artículo a tu lista de deseados, seguirlo o marcarlo como que no estás interesado.</p>
+                        </div>
+                    </div>
+                    <div class="row mx-0">
+                        <div class="col-12 col-sm-10 col-md-8 offset-sm-1 offset-md-2 mt-3 p-0 d-md-flex">
+
+                            <div class="col-12 col-md-4 order-md-12 px-0 pl-md-2">
+                                <div class="bg-black-trans-custom">
+                                    <h5 class="header-secundario bg-black-trans-custom p-2">Puede que este juego te interese:</h5>
+                                    <p class="p-2 mb-0 text-justify">Inicia sesión para ver las razones por las que este podría gustarte o no en función de tus juegos, amigos y los mentores a los que sigues.</p>
+                                    <div class="d-flex d-md-block d-xl-flex text-center p-2">
+                                        <button type="button" class="btn btn-primary mr-1">Iniciar sesión</button>
+                                        <div class="d-flex align-items-center">
+                                            <p class="w-100 font-weight-bold text-white text-center m-0">o</p>
+                                        </div>
+                                        <button type="button" class="btn btn-primary ml-1">Abrir Steam</button>
+                                    </div>
+                                </div>
+                                <div class="bg-black-trans-custom mt-3 p-3">
+                                    <ul class="list-group font-size-09">
+                                        <li class="list-group-item list-group-item-primary rounded-0 p-0"><img class="bg-black-trans-custom mr-1" src="images/ico_singlePlayer.png" alt="jug"/>Un jugador</li>
+                                        <li class="list-group-item list-group-item-primary p-0"><img class="bg-black-trans-custom mr-1" src="images/ico_multiPlayer.png" alt="mul"/>Multijugador</li>
+                                        <li class="list-group-item list-group-item-primary p-0"><img class="bg-black-trans-custom mr-1" src="images/ico_coop.png" alt="coop"/>Cooperativo</li>
+                                        <li class="list-group-item list-group-item-primary p-0"><img class="bg-black-trans-custom mr-1" src="images/ico_cards.png" alt="cromo"/>Cromos de Steam</li>
+                                        <li class="list-group-item list-group-item-primary p-0"><img class="bg-black-trans-custom mr-1" src="images/ico_cart.png" alt="compras"/>Compras dentro del juego</li>
+                                        <li class="list-group-item list-group-item-primary p-0"><img class="bg-black-trans-custom mr-1" src="images/ico_partial_controller.png" alt="controlador"/>Compatibilidad con mando</li>
+                                        <li class="list-group-item list-group-item-warning rounded-0 p-0 mt-2">Requiere una cuenta de terceros: Warframe Account</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-black-trans-custom mt-3 pb-2 px-2">
+                                    <p class="p-2 m-0">Idiomas:</p>
+                                    <table class="w-100 text-center table-responsive">
+                                        <tr class="border border-top-0 border-left-0 border-right-0">
+                                            <td></td>
+                                            <td class="p-1">Interfaz</td>
+                                            <td class="p-1">Voces</td>
+                                            <td class="p-1">Subtítulos</td>
+                                        </tr>
+                                        <tr class="border border-top-0 border-left-0 border-right-0">
+                                            <td>Español</td>
+                                            <td>
+                                                <img src="images/ico_bluecheck.png" alt="check"/>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <img src="images/ico_bluecheck.png" alt="check"/>
+                                            </td>
+                                        </tr>
+                                        <tr class="border border-top-0 border-left-0 border-right-0">
+                                            <td>Inglés</td>
+                                            <td>
+                                                <img src="images/ico_bluecheck.png" alt="check"/>
+                                            </td>
+                                            <td>
+                                                <img src="images/ico_bluecheck.png" alt="check"/>
+                                            </td>
+                                            <td>
+                                                <img src="images/ico_bluecheck.png" alt="check"/>
+                                            </td>
+                                        </tr>
+                                        <tr class="border border-top-0 border-left-0 border-right-0">
+                                            <td>Alemán</td>
+                                            <td>
+                                                <img src="images/ico_bluecheck.png" alt="check"/>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <img src="images/ico_bluecheck.png" alt="check"/>
+                                            </td>
+                                        </tr>
+                                        <tr class="border border-top-0 border-left-0 border-right-0">
+                                            <td>Francés</td>
+                                            <td>
+                                                <img src="images/ico_bluecheck.png" alt="check"/>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <img src="images/ico_bluecheck.png" alt="check"/>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Italiano</td>
+                                            <td>
+                                                <img src="images/ico_bluecheck.png" alt="check"/>
+                                            </td>
+                                            <td></td>
+                                            <td>
+                                                <img src="images/ico_bluecheck.png" alt="check"/>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class="bg-black-trans-custom mt-3 text-center p-2">
+                                    <img src="images/18.gif" alt=""/>
+                                    <p class="mb-0 pt-2">Violence, Online Gameplay</p>
+                                </div>
+                                <div class="bg-black-trans-custom mt-3 p-2">
+                                    <p class="mb-0 pb-2">Incluye 174 logros de Steam</p>
+                                    <div class="text-center pb-2">
+                                        <img src="images/d5e1bee7165bd56d1d010997eaec0d0a27eeecc6.jpg" alt=""/>
+                                        <img src="images/f4e2d348da12eb20059f7b5f22f45f54020a711e.jpg" alt=""/>
+                                        <img src="images/ea67efe051c016d1b8da22e51de045d264696fc5.jpg" alt=""/>
+                                        <img src="images/5849407359b44eaebf2c254cf1b1223e125f817b.jpg" alt=""/>
+                                    </div>
+                                </div>
+                                <div class="bg-black-trans-custom mt-3 p-2">
+                                    <ul class="list-group list-unstyled azulito font-size-09 p-1">
+                                        <li><span class="font-weight-bold">Título:</span> Warframe</li>
+                                        <li><span class="font-weight-bold">Género:</span> Acción, Free to Play</li>
+                                        <li><span class="font-weight-bold">Desarrollador:</span> Digital Extremes</li>
+                                        <li><span class="font-weight-bold">Editor:</span> Digital Extremes</li>
+                                        <li><span class="font-weight-bold">Fecha de lanzamiento:</span> 25 MAR 2013</li>
+                                    </ul>
+                                    <ul class="list-group font-size-09">
+                                        <li class="list-group-item list-group-item-primary rounded-0 p-1 bg-black-trans-custom">Visitar el sitio web</li>
+                                        <li class="list-group-item list-group-item-primary p-1 bg-black-trans-custom">Ver el manual</li>
+                                        <li class="list-group-item list-group-item-primary p-1 bg-black-trans-custom">Ver historial de actualizaciones</li>
+                                        <li class="list-group-item list-group-item-primary p-1 bg-black-trans-custom">Leer noticias relacionadas</li>
+                                        <li class="list-group-item list-group-item-primary p-1 bg-black-trans-custom">Ver discursiones</li>
+                                        <li class="list-group-item list-group-item-primary rounded-0 p-1 bg-black-trans-custom">Buscar grupos de la comunidad</li>
+                                    </ul>
+                                </div>
+                                <div class="bg-black-trans-custom my-3 d-flex d-md-block d-lg-flex p-2">
+                                    <button type="button" class="btn btn-primary p-1 d-md-block">Compartir</button>
+                                    <button type="button" class="btn btn-primary ml-1 p-1 d-md-block mt-0 mt-md-2 mt-lg-0">Insertar</button>
+                                    <button type="button" class="btn btn-primary ml-1 icon_report p-3 d-md-block mt-0 mt-md-2 mt-lg-0"></button>
+                                </div>
+                            </div>
+							<div class="col-12 col-md-8 order-md-1 p-0">
+								<div class="d-flex justify-content-between bg-white-trans-custom p-2">
+									<h2 class="header-secundario">Jugar a Warframe</h2>
+									<button type="button" class="btn btn-success h-75 mt-2">Jugar</button>
+								</div>
+								<div class="my-2 text-justify p-2">
+									<h4 class="header-secundario border  border-top-0 border-left-0 border-right-0 border-primary">Recién actualizado</h4>
+									<h4 class="header-secundario">NUEVA AVENTURA CINEMÁTICA &amp; NUEVA JUGABILIDAD</h4>
+									<p>El Imperio Grineer se hace más fuerte a medida que un amigo se convierte en enemigo. ¿Qué secretos mantiene el Imperio Grineer? Sin poder, sin preparación y forzado fuera de tu comodidad, debes encontrar en ti mismo la manera de derrotar a nuevos enemigos para salvarte. Ten cuidado, siendo que hay consecuencias significativas a tus acciones.</p>
+									<p>«La guerra interna» ya está disponible para todos los tenno que han completado «El segundo sueño» y han desbloqueado la región de Sedna.</p>
+									<img class="w-100" src="images/warframe/Screenshot_1.jpg" alt="war-1"/>
+									<h4 class="header-secundario">NUEVO ESCENARIO</h4>
+									<p>La Fortaleza de Kuva es hogar de las más avanzadas fortificaciones de los grineer hasta la fecha. Elementos extraños e intrincados de rojo, negro y oro son presentados orgullosamente a través de la Fortaleza… la decoración es mucho más ornamentado que otros lugares de los grineer. La Fortaleza está muy segura con nuevos y peligrosos oponentes.</p>
+									<img class="w-100" src="images/warframe/Screenshot_7.jpg" alt="war-2"/>
+									<h4 class="header-secundario">NUEVOS ENEMIGOS</h4>
+									<p>Con armadura pesada y adornado con tela roja, los Guardianes Kuva forman parte de la élite del ejército de la Reina. Los Guardianes Kuva te rodearán y con unos pocos golpes, traerán a los tenno a sus pies. Ellos son perseguidos por criaturas que se parecen a un travieso bufón, que atacan rápido y son muy mortales. Para derrotarlos, necesitas utilizar lo nuevo que has aprendido.</p>
+									<img class="w-100" src="images/warframe/Screenshot_8.jpg" alt="war-3"/>
+									<h4 class="header-secundario">NUEVAS ARMAS Y PERSONALIZACIONES</h4>
+									<p>Desarma a tus enemigos y utiliza estas nuevas armas en tu ventaja. Las Rogga Gemelas – Estos cañones gemelos de destrucción son las pistolas distintivas de los Guardianes Kuva. La Zarr – Descarga una cortina de explosivos o un gran disparo antiaéreo desde la enorme garganta de este cañón. La Kesheg - Despedaza y atraviesa las multitudes de enemigos rebeldes con esta feroz alabarda, el arma distintiva de los Guardianes Kuva.</p>
+									<p>Decora a tu warframe, compañeros y nave de desembarco con equipamiento inspirado en Kuva.</p>
+									<img class="w-100" src="images/warframe/Screenshot_2.jpg" alt="war-4"/>
+								</div>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <footer class="col-12">
+            <aside>
+                <div class="p-2 row text-center bg-black-custom">
+                    <div class="col-sm-12 col-md-5 offset-md-1">
+                        <img src="images/logo_valve_footer.png" alt="valve"/>
+                    </div>
+                    <div class="col-sm-12 col-md-5">
+                        <img class="" src="images/logo_steam_footer.png" alt="steam"/>
+                    </div>
+                </div>
+                <div class="p-2 row text-center bg-black-custom font-size-08">
+                    <div class="col-sm-12 col-md-4 list-group">
+                        <a href="">Política de Privacidad</a>
+                        <a href="">Información legal</a>
+                    </div>
+                    <div class="col-sm-12 col-md-4 list-group">
+                        <a href="">Empleo</a>
+                        <a href="">Acuerdo de Suscriptior a Steam</a>
+                    </div>
+                    <div class="colsm-12 col-md-4 list-group">
+                        <a href="">Reembolsos</a>
+                        <a href="">Acerca de Valve</a>
+                    </div>
+                </div>
+                <div class="row bg-grey-custom text-white justify-content-center ">
+                    <div class="col-10 font-size-08">© 2017 Valve Corporation. Todos los derechos reservados. Todas las marcas registradas pertenecen a sus respectivos dueños en EE. UU. y otros países. Todos los precios incluyen IVA (donde sea aplicable).</div>
+                </div>
+            </aside>
+        </footer>
+		<script src="js/cuentaAtras.js" type="text/javascript"></script>
+		<script src="js/jquery-3.js" type="text/javascript"></script>
+		<script src="js/popper.js" type="text/javascript"></script>
+		<script src="js/bootstrap.js" type="text/javascript"></script>
+	</body>
+</html>
